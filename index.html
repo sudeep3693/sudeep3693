@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
+
 <body>
 
     <div class = "headerPart">
     <nav>
         <input type="checkbox" id="check">
         <label for="check">
-            <img src="../IMG/horizontalbar.png" height="50px" width="50px" alt="img not found">
+            <img class="toggleButton" src="../IMG/horizontalbar.png" height="50px" width="50px" alt="img not found">
         </label>
         <label class="nameLabel">SUDEEP SUBEDI</label>
         <ul type = "none">
@@ -24,6 +26,22 @@
         </ul>
     </nav>
 
+    <section>
+      
+                <img class="image" src="../IMG/photo.jpg" height="220px" width="220px" alt="No profile picture detected">
+                <h3>I am a <span class="typeddata"></span></h3>
+       
+    </section>
+
 </div>
-</body>
+<script> 
+    var typed = new Typed('.typeddata', {
+      strings: ['Programmer', 'Fast Learner', 'Developer'],
+      typeSpeed: 100,
+      backSpeed:50,
+      backDelay: 1000,
+      loop:true
+    });
+  </script>
+</body> 
 </html>
