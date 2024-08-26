@@ -10,6 +10,8 @@
 
 <body>
 
+    <div class="bodypart">
+
     <div class = "headerPart">
     <nav>
         <input type="checkbox" id="check">
@@ -19,21 +21,61 @@
         <label class="nameLabel">SUDEEP SUBEDI</label>
         <ul type = "none">
             <li class=""><a href="#">HOME</a></li>
-            <li class=""><a href="#">ABOUT</a></li>
+            <li class=""><a href="#about">ABOUT</a></li>
             <li class=""><a href="#">SKILLS</a></li>
             <li class=""><a href="#">PROJECTS</a></li>
             <li class=""><a href="#">CONTACT/HIRE</a></li>
         </ul>
     </nav>
 
-    <section>
-      
-                <img class="image" src="../IMG/photo.jpg" height="220px" width="220px" alt="No profile picture detected">
+    <section id="secction">
+        
+        <a href="https://www.facebook.com/Sudeepsubedi147" target="_blank"><img class="imagge" src="../IMG/photo.jpg" height="220px" width="220px" alt="No profile picture detected"></a>
                 <h3>I am a <span class="typeddata"></span></h3>
+              
+                <button class="resume">Resume</button>
+                <div class="linkSection">
+                    <a  class="logo" href="https://github.com/sudeep3693" target="_blank"><img src="../IMG/github.png" alt="git not found" ></a>
+                    <a  class="logo" href="https://www.linkedin.com/in/sudeep-subedi-626200322" target="_blank"><img src="../IMG/linkedin.png" alt="linked in not found" ></a>
+                    <a  class="logo" href="https://www.instagram.com/sudeepsubedi147?igsh=MTRza3VkcjZ2dTU0Mw==" target="_blank"><img src="../IMG/insta.png" alt="insta not found" ></a>
+                </div>
        
     </section>
 
 </div>
+
+<div class="about" id = "about">
+    <div class="aboutme">
+        <h2 class="abm">About Me</h2>
+        <div class="detail">
+            <p>I am a Discipline Student, undergraduate in Information Technology from Janapriya Multiple campus (Tribhuvan University), seeking for IT Related Internship/Full-Time Opportunities.</p>
+            <p>
+                I have a rich experience in Full Stack Development & Open-Source. I love to spend my time to learning new technologies & applying them to develop new things. 
+            </p>
+            <p>Also I am good at problem-solving and proficient with Cybersecurity.</p>
+        </div>
+    </div>
+    
+    <div class="basicinfo">
+        
+        <h2 class="abm">Basic Information</h2>
+        <div class="twodivs">
+        <div class="infotitle">
+           <h3 class="h3tag">Email:</h3>
+           <h3 class="h3tag">Phone:</h3>
+           <h3 class="h3tag">Address:</h3>
+           <h3 class="h3tag">Language:</h3>
+        </div>
+
+        <div class="detailinfo">
+            <h3 class="h3tag">sudeepsubedi72@gmail.com</h3>
+            <h3 class="h3tag">+977 9846008536</h3>
+            <h3 class="h3tag">Pokhara-8 Rastrabank-chowk </h3>
+            <h3 class="h3tag">English, Nepali, Hindi</h3>
+        </div>
+    </div>
+</div>
+    </div>
 <script> 
     var typed = new Typed('.typeddata', {
       strings: ['Programmer', 'Fast Learner', 'Developer'],
@@ -43,5 +85,6 @@
       loop:true
     });
   </script>
+  </div>
 </body> 
 </html>

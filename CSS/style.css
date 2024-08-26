@@ -3,17 +3,27 @@ body{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+   display: block;
+    
+}
+
+.bodypart{
+    background-color: lightgrey;
+
 }
 .headerPart{
     background-image:url('../IMG/backgroundImage.gif' );
     width:100%;
     height:600px;
+    padding-bottom: 60px;
 }
 
 nav {
+   
     height: 60px;
     margin-left:2px;
     padding:2px;
+    
 }
 
 .nameLabel{
@@ -23,7 +33,6 @@ nav {
     font-size: 25px;
     line-height: 80px;
     font-weight: 200;
-    
 }
 
 nav ul{
@@ -75,21 +84,112 @@ section h3{
     color:antiquewhite;
     font-size:22px;
 }
+.linkSection{
+    padding:15px 0 0 0;
+}
+.logo{
+    margin:0 5px;
+    padding:0 5px;
+}
+.logo img{
+    width:30px;
+    height:30px;
+}
 
-
- .image{
+ .imagge{
     border-radius:50%;
+    
 }
 
 .typeddata{
     color:rgb(201, 247, 148);
 }
+button
+{
+    padding:8px 15px;
+    border-radius: 8%;
+}
 
-@media screen and (max-width: 873px) {
-    body {
-      background-color: blue;
-    }
+ .resume{
+    background-color:blue;
+    color:azure;
+    font-size:20px;
+    margin:7px;
+}
 
+.imagge:hover{
+    cursor:pointer;
+    transform:scale(1.1);
+    transition: all 0.5s;
+    
+}
+
+.resume:hover{
+    background-color: lightgreen;
+    transition:all 0.5s;
+    color:white;
+}
+.about {
+    background-color: white;
+    display:flex;
+    box-shadow: 40px 40px ;
+    margin: 40px 10px 40px 20px;
+}
+.aboutme{
+    width:50%;
+   
+}
+.abm
+{
+    text-align: center;
+    justify-content: center;
+    padding-top:30px;
+    font-size:32px;
+    font-weight:900;
+    font-family: 'Courier New', Courier, monospace;
+    color:grey;
+}
+.detail{
+margin:5px 20px 5px 5px;
+
+}
+
+.detail p{
+    margin-left: 30px;
+    margin-right: 30px;
+    color:grey;
+    font-size:18px;
+    font-weight: 100;
+}
+
+.basicinfo{
+    margin:5px 20px 5px 5px;
+}
+
+.twodivs{
+    
+    color:grey;
+    
+}
+
+.infotitle{
+    display:inline-block;
+    
+}
+
+.detailinfo{
+    
+    display:inline-block;
+    font-weight: lighter;
+    
+}
+.detailinfo .h3tag{
+    font-weight: lighter;
+    margin-left:10px;
+    
+}
+
+@media screen and (max-width: 903px) {
 
     .nameLabel {
        padding: 5px 10px 0 50px;
@@ -127,13 +227,14 @@ section h3{
         display:block;
         margin:5px 40px 0 0;
         float:right;
-        
     }
+
 
     #check:checked ~ ul{
     right:0;
     transition:all 0.5s
     }
+   
     #check:checked ~ .nameLabel
     {
         position:fixed;
@@ -145,8 +246,25 @@ section h3{
     {
         position: fixed;
         right: 210px;
-        transition : all 0.5s;
-        
+        transition : all 7s ease-in;
+    }
+
+    .twodivs{
+       justify-content: space-between;
+    }
+
+    
+    .aboutme{
+        width:100%;
+    }
+
+    .about{
+        display:block;
+    }
+
+    .infotitle{
+        margin-left:30px;
+
     }
   }
 
