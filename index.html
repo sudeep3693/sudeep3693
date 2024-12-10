@@ -76,6 +76,97 @@
     </div>
 </div>
     </div>
+
+    <div class="skills">
+        <div class="row1">
+            <h2>Here are my few skills related to software development</h2>
+        </div>
+
+        <div class="row2">
+            <div class="progress-container">
+                <h4>Java</h4>
+                <div class="progressbar">
+                    <span data-width="90%"></span>
+                </div>
+            </div>
+    
+            <div class="progress-container">
+                <h4>JavaScript</h4>
+                <div class="progressbar">
+                    <span data-width="90%"></span>
+                </div>
+            </div>
+    
+            <div class="progress-container">
+                <h4>C Programming</h4>
+                <div class="progressbar">
+                    <span data-width="90%"></span>
+                </div>
+            </div>
+    
+            <div class="progress-container">
+                <h4>SQL</h4>
+                <div class="progressbar">
+                    <span data-width="80%"></span>
+                </div>
+            </div>
+    
+            <div class="progress-container">
+                <h4>Hibernate</h4>
+                <div class="progressbar">
+                    <span data-width="40%"></span>
+                </div>
+            </div>
+    
+            <div class="progress-container">
+                <h4>JSP</h4>
+                <div class="progressbar">
+                    <span data-width="60%"></span>
+                </div>
+            </div>
+        </div>
+        
+      
+    </div>
+
+    <div class="projects">
+        <div class="row1">
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="row2">
+            
+                <div class="project">
+                    <div class="pName">Hotel Reservation System</div>
+                    <hr width="85%" color="gray" size="2px">
+                    <div class="pImage"><img src="../IMG/hrs/2.jpg" height="200px" width="100%" alt="image not found"></img></div>
+                    <div class="pDetail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, voluptatum in repellendus vero inventore, alias quibusdam nisi amet suscipit magnam numquam iure quas. Quasi, assumenda.</div>
+
+                </div>
+                <div class="project">
+                    <div class="pName"></div>
+                    <div class="pImage"></div>
+                    <div class="pDetail"></div>
+
+                </div>
+                <div class="project">
+                    <div class="pName"></div>
+                    <div class="pImage"></div>
+                    <div class="pDetail"></div>
+
+                </div>
+                <div class="project">
+                    <div class="pName"></div>
+                    <div class="pImage"></div>
+                    <div class="pDetail"></div>
+
+                </div>
+            </div>
+                
+        
+    
+    
+    </div>
 <script> 
     var typed = new Typed('.typeddata', {
       strings: ['Programmer', 'Fast Learner', 'Developer'],
@@ -84,6 +175,15 @@
       backDelay: 1000,
       loop:true
     });
+
+    const spans = document.querySelectorAll('.progressbar span');
+
+    spans.forEach((span)=>{
+        span.style.width= span.dataset.width;
+        span.innerHTML = span.dataset.width;
+    });
+
+   
   </script>
   </div>
 </body> 

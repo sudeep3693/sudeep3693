@@ -131,12 +131,18 @@ button
 }
 .about {
     background-color: white;
+    width: 82%;
     display:flex;
-    box-shadow: 40px 40px ;
-    margin: 40px 10px 40px 20px;
+    box-shadow: 10px 11px 12px 0px gray;
+    margin-left:9%;
+    margin-right:9%;
+    margin-top:50px;
+    border-radius: 5px;
+    
 }
 .aboutme{
     width:50%;
+    
    
 }
 .abm
@@ -151,7 +157,6 @@ button
 }
 .detail{
 margin:5px 20px 5px 5px;
-
 }
 
 .detail p{
@@ -164,6 +169,7 @@ margin:5px 20px 5px 5px;
 
 .basicinfo{
     margin:5px 20px 5px 5px;
+    
 }
 
 .twodivs{
@@ -188,6 +194,152 @@ margin:5px 20px 5px 5px;
     margin-left:10px;
     
 }
+.skills{
+    background-color: white;
+    box-shadow: 10px 11px 12px 0px gray;
+    width: 82%;
+    margin-left:9%;
+    margin-right:9%;
+    margin-top:50px;
+    border-radius: 5px;
+}
+
+.skills .row1{
+    padding:20px 0px 10px 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills .row2{
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.skills .row1 h2{
+    font-size:30px;
+}
+
+
+.projects{
+    background-color: white;
+    box-shadow: 10px 11px 12px 0px gray;
+    width: 82%;
+    margin-left:9%;
+    margin-right:9%;
+    margin-top:50px;
+    border-radius: 5px;
+}
+
+.projects .row1{
+    padding:20px 0px 10px 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+.projects .row1 h2{
+    font-size:30px;
+  
+}
+
+.projects .row2{
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+   
+}
+
+.projects .row2 .project{
+    left:-100%;
+    width: 90%;
+    text-align: center;
+    height:500px;
+    box-shadow:2px 3px 4px 2px grey;
+    margin:30px 5px 20px 30px;
+    overflow: hidden;
+}
+
+
+.projects .row2 .project .pName{
+
+    justify-content: center;
+    text-align: center;
+    color:darkgrey;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    font-size:20px;
+    
+}
+ .projects .row2 .project .pImage{
+    margin:10px 5px 10px 0px;
+    width:100%;
+    height:200px;
+    text-align: center;
+    border-radius: 5px;
+
+ }
+
+ .projects .row2 .project:hover .pImage {
+    
+        cursor:pointer;
+        transform:scale(1.1);
+        transition: all 2s;
+  
+ }
+
+ 
+
+ .projects .row2 .project .pDetail{
+
+margin: 10px 5px 10px 0px;
+ }
+.skills .row2 .progress-container{
+  
+    margin:5px 10px 5px 10px;
+    display:block;
+    padding-left: 40px;
+
+}
+.skills .row2 .progress-container h4
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+
+}
+
+.skills .row2 .progress-container .progressbar
+{
+    position: relative;
+    height:25px;
+    width:400px;
+    border: 1px solid green;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow:3px 4px 5px 0px gray;
+}
+
+.skills .row2 .progress-container .progressbar span
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 0%;
+    height:100%;
+    font-weight: 800;
+    font-size:20px;
+    border-radius: 30px;
+    color:white;
+    background:linear-gradient(90deg, rgba(76,175,80,1) 50%, rgba(50,222,132,1) 100%);
+    text-align: center; 
+    transition: all 0.5s linear;
+}
+.skills .row2 .progress-container .progressbar span:visited{
+    transition: all 0.5s linear;
+}
 
 @media screen and (max-width: 903px) {
 
@@ -205,7 +357,6 @@ margin:5px 20px 5px 5px;
         width:200px;
         height: 100vh;
         right:-100%;
-        
     }
 
     nav ul li{
@@ -228,7 +379,6 @@ margin:5px 20px 5px 5px;
         margin:5px 40px 0 0;
         float:right;
     }
-
 
     #check:checked ~ ul{
     right:0;
@@ -253,18 +403,27 @@ margin:5px 20px 5px 5px;
        justify-content: space-between;
     }
 
-    
     .aboutme{
         width:100%;
     }
 
     .about{
         display:block;
+        width:95%;
+        margin:40px 2.5% 40px 2.5%;
     }
 
     .infotitle{
         margin-left:30px;
 
+    }
+
+    .skills{
+        display:block;
+    }
+
+    .projects{
+        display:block;
     }
   }
 
