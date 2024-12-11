@@ -253,8 +253,7 @@ margin:5px 20px 5px 5px;
 .projects .row2 .project{
     left:-100%;
     width: 90%;
-    text-align: center;
-    height:500px;
+    height:600px;
     box-shadow:2px 3px 4px 2px grey;
     margin:30px 5px 20px 30px;
     overflow: hidden;
@@ -265,7 +264,7 @@ margin:5px 20px 5px 5px;
 
     justify-content: center;
     text-align: center;
-    color:darkgrey;
+    color:darkslategrey;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 10px;
@@ -289,12 +288,60 @@ margin:5px 20px 5px 5px;
   
  }
 
- 
-
  .projects .row2 .project .pDetail{
 
-margin: 10px 5px 10px 0px;
+    margin: 10px 5px 10px 20px;
+
  }
+
+ .projects .row2 .project .skillsUsed{
+
+    display:inline-block;
+    justify-content: center;
+    margin:0px 8px 0px 12px;
+
+
+ }
+
+ .projects .row2 .project .skillsUsed .skl{
+    background-color: aqua;
+    margin:5px 8px 5px 12px;
+    padding:8px 8px 8px 8px;;
+    border-radius:5px;
+    font-size:15px;
+    float:left;
+ }
+
+ .projects .row2 .project .codesnimages{
+
+    display:flex;
+    justify-content: space-between;
+
+ }
+
+ .projects .row2 .project .codesnimages .images{
+    font-size: 15px;
+    font-weight: 200;
+    background-color: aqua;
+    margin:5px 18px 5px 18px;
+    border-color: aqua;
+    padding:8px 8px 8px 8px;;
+    border-radius:5px;
+ }
+
+ .projects .row2 .project .codesnimages .codes{
+
+    font-size: 15px;
+    font-weight: 200;
+    background-color: aqua;
+    border-color: aqua;
+    margin:5px 18px 5px 18px;
+    padding:8px 8px 8px 8px;;
+    border-radius:5px;
+
+ }
+
+
 .skills .row2 .progress-container{
   
     margin:5px 10px 5px 10px;
@@ -315,7 +362,7 @@ margin: 10px 5px 10px 0px;
 {
     position: relative;
     height:25px;
-    width:400px;
+    width:85%;
     border: 1px solid green;
     background-color: white;
     border-radius: 30px;
@@ -337,9 +384,7 @@ margin: 10px 5px 10px 0px;
     text-align: center; 
     transition: all 0.5s linear;
 }
-.skills .row2 .progress-container .progressbar span:visited{
-    transition: all 0.5s linear;
-}
+
 
 @media screen and (max-width: 903px) {
 
@@ -418,13 +463,17 @@ margin: 10px 5px 10px 0px;
 
     }
 
-    .skills{
+    .skills .row2{
+        display:block;
+    }
+    .skills .row2 .progress-container .progressbar
+{
+    width:80%;
+}
+    .projects .row2{
         display:block;
     }
 
-    .projects{
-        display:block;
-    }
   }
 
   
