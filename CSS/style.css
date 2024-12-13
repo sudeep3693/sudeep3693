@@ -315,6 +315,25 @@ margin:5px 20px 5px 5px;
    
 }
 
+.getintouch .row2 .col1 .line .text input{
+    position:absolute;
+    margin-top: 5px ;
+    margin-left: 5px;
+    margin-right: 5px;
+    width:85%;
+    border:none;
+    opacity: 50%;
+    outline: none;
+   
+}
+
+.getintouch .row2 .col1 textarea{
+    width:100%;
+    resize: none;
+    outline:none;
+    border:none;
+    opacity: 50%;    
+}
 .getintouch .row2 .col2{
     width: 50%;
     margin:20px 20px 20px 20px;
@@ -334,7 +353,7 @@ margin:5px 20px 5px 5px;
 .projects .row2 .project{
     
     width: 90%;
-    height:600px;
+    height:auto;
     box-shadow:2px 3px 4px 2px grey;
     margin:30px 5px 20px 30px;
     overflow: hidden;
@@ -463,7 +482,8 @@ margin:5px 20px 5px 5px;
     color:white;
     background:linear-gradient(90deg, rgba(76,175,80,1) 50%, rgba(50,222,132,1) 100%);
     text-align: center; 
-    transition: all 0.5s linear;
+    transition: width 1.5s linear;
+    animation-delay: none;
 }
 
 
