@@ -243,6 +243,87 @@ margin:5px 20px 5px 5px;
   
 }
 
+.getintouch{
+    background-color: white;
+    box-shadow: 10px 11px 12px 0px gray;
+    width: 82%;
+    margin-left:9%;
+    margin-right:9%;
+    margin-top:50px;
+    border-radius: 5px;
+}
+
+.getintouch .row1{
+    padding:20px 0px 10px 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+.getintouch .row1 h2{
+    font-size:30px;
+  
+}
+
+.getintouch .row2{
+    
+    display: flex;
+    margin:10px 20px 10px 20px;
+    
+}
+
+.getintouch .row2 .col1{
+
+    width:50%;
+    height: auto;
+    margin:10px 20px 20px 20px;
+    color:gray;
+}
+
+.getintouch .row2 .col1 .line{
+    border:1px gray solid;
+    line-height: 13px;
+    border-radius:25px ;
+    padding:5px;
+    margin:28px auto 28px auto;
+    font-size:15px;
+    position: relative;
+    display: flex;
+   
+}
+
+.getintouch .row2 .col1 .message{
+    color:darkslategrey;
+}
+
+.getintouch .row2 .col1 .line .immage{
+    margin-top: 5px ;
+    margin-left: 5px;
+    
+   
+}
+
+
+.getintouch .row2 .col1 .line .text input{
+    position:absolute;
+    margin-top: 5px ;
+    margin-left: 5px;
+    margin-right: 5px;
+    width:85%;
+    border:none;
+    opacity: 50%;
+    outline: none;
+   
+}
+
+.getintouch .row2 .col2{
+    width: 50%;
+    margin:20px 20px 20px 20px;
+    font-size:20px;
+    color: darkslategray;
+    font-weight:bold;
+}
+
+
 .projects .row2{
     
     display: grid;
@@ -251,7 +332,7 @@ margin:5px 20px 5px 5px;
 }
 
 .projects .row2 .project{
-    left:-100%;
+    
     width: 90%;
     height:600px;
     box-shadow:2px 3px 4px 2px grey;
@@ -472,6 +553,10 @@ margin:5px 20px 5px 5px;
 }
     .projects .row2{
         display:block;
+    }
+
+    .getintouch .row2 .col1 .line .text input{
+        width:60%;
     }
 
   }
