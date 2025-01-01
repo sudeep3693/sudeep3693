@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sudeep_subedi Portfolio</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -24,9 +26,9 @@
                 <ul type="none">
                     <li class=""><a href="#">HOME</a></li>
                     <li class=""><a href="#about">ABOUT</a></li>
-                    <li class=""><a href="#">SKILLS</a></li>
-                    <li class=""><a href="#">PROJECTS</a></li>
-                    <li class=""><a href="#">CONTACT/HIRE</a></li>
+                    <li class=""><a href="#skills">SKILLS</a></li>
+                    <li class=""><a href="#projects">PROJECTS</a></li>
+                    <li class=""><a href="#contact">CONTACT/HIRE</a></li>
                 </ul>
             </nav>
 
@@ -36,7 +38,7 @@
                         src="../IMG/photo.jpg" height="220px" width="220px" alt="No profile picture detected"></a>
                 <h3>I am a <span class="typeddata"></span></h3>
 
-                <button class="resume">Resume</button>
+                <a href="File/resume.pdf" download="resume.pdf" class="resume">Resume</a>
                 <div class="linkSection">
                     <a class="logo" href="https://github.com/sudeep3693" target="_blank"><img src="../IMG/github.png"
                             alt="git not found"></a>
@@ -50,8 +52,8 @@
 
         </div>
 
-        <div class="about" id="about">
-            <div class="aboutme">
+        <div class="about" id="about" >
+            <div class="aboutme" data-aos="fade-up">
                 <h2 class="abm">About Me</h2>
                 <div class="detail">
                     <p>I am a Discipline Student, undergraduate in Information Technology from Janapriya Multiple campus
@@ -64,28 +66,34 @@
                 </div>
             </div>
 
-            <div class="basicinfo">
+            <div class="basicinfo" data-aos="fade-up">
 
                 <h2 class="abm">Basic Information</h2>
                 <div class="twodivs">
-                    <div class="infotitle">
-                        <h3 class="h3tag">Email:</h3>
-                        <h3 class="h3tag">Phone:</h3>
-                        <h3 class="h3tag">Address:</h3>
-                        <h3 class="h3tag">Language:</h3>
+                    <div class="row">
+                        <div class="infotitle">Email: </div>
+                        <div class="detailinfo">sudeepsubedi72@gmail.com</div>
                     </div>
 
-                    <div class="detailinfo">
-                        <h3 class="h3tag">sudeepsubedi72@gmail.com</h3>
-                        <h3 class="h3tag">+977 9846008536</h3>
-                        <h3 class="h3tag">Rastrabank, Pokhara </h3>
-                        <h3 class="h3tag">English, Nepali, Hindi</h3>
+                    <div class="row">
+                        <div class="infotitle">Phone: </div>
+                        <div class="detailinfo">+977 9846008536</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="infotitle">Address: </div>
+                        <div class="detailinfo">Rastrabank chowk, Pokhara</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="infotitle">Language: </div>
+                        <div class="detailinfo">English, Nepali, Hindi </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="skills">
+        <div class="skills" id="skills" data-aos="fade-up">
             <div class="row1">
                 <h2>Here are my few skills</h2>
             </div>
@@ -94,42 +102,42 @@
                 <div class="progress-container">
                     <h4>Java</h4>
                     <div class="progressbar">
-                        <span data-width="90%"></span>
+                        <span  data-aos="slide-right" data-width="90%" data-aos-duration="4000"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>JavaScript</h4>
                     <div class="progressbar">
-                        <span data-width="90%"></span>
+                        <span data-width="90%" data-aos-duration="8000" data-aos="slide-right"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>C Programming</h4>
                     <div class="progressbar">
-                        <span data-width="50%"></span>
+                        <span data-width="50%" data-aos="slide-right" data-aos-duration="8000"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>SQL</h4>
                     <div class="progressbar">
-                        <span data-width="50%"></span>
+                        <span data-width="50%" data-aos="slide-right" data-aos-duration="4000"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>Hibernate</h4>
                     <div class="progressbar">
-                        <span data-width="50%"></span>
+                        <span data-width="50%" data-aos="slide-right" data-aos-duration="4000"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>JSP</h4>
                     <div class="progressbar">
-                        <span data-width="40%"></span>
+                        <span data-width="40%" data-aos="slide-right" data-aos-duration="4000"></span>
                     </div>
                 </div>
             </div>
@@ -137,19 +145,19 @@
 
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects">
             <div class="row1">
                 <h2>My Projects</h2>
             </div>
 
             <div class="row2">
 
-                <div class="project">
+                <div class="project" data-aos="fade-up" >
 
-                    <div class="pImage"><img src="../IMG/hrs/2.jpg" height="200px" width="100%"
+                    <div class="pImage" data-aos="fade-left"><img src="../IMG/hrs/2.jpg" height="200px" width="100%"
                             alt="image not found"></img></div>
                     <div class="pName">Hotel Reservation System</div>
-                    <div class="pDetail">Hotel Reservation System is a simple desktop based application built with the
+                    <div class="pDetail" data-aos="fade-right">Hotel Reservation System is a simple desktop based application built with the
                         aim to replicate the reservation system used by various hotels and restaurants.
                         <p>The system used java programming language as the core programming language. The system was
                             built in Netbeans API using JFrame Forms. It is just a simple and functioning application
@@ -158,7 +166,7 @@
                             also implemented properly to deal with the database.</p>
                     </div>
 
-                    <div class="skillsUsed">
+                    <div class="skillsUsed" data-aos="fade-left">
 
                         <h3 class="skl">Jar</h3>
                         <h3 class="skl">Java</h3>
@@ -166,25 +174,36 @@
 
                     </div>
                     <hr width="85%" color="gray">
-                    <div class="codesnimages">
+                    <div class="codesnimages" data-aos="fade-left">
                         <button class="images">Images</button>
                         <a href="https://github.com/sudeep3693/HotelReservationSystem/blob/main/home.java"
                             target="_blank"> <button class="codes">Code</button></a>
                     </div>
 
                 </div>
-                <div class="project">
+                <div class="project" data-aos="fade-up">
 
-                    <div class="pImage"><img src="../IMG/lds/img.jpg" height="200px" width="100%"
+                    <div class="pImage" data-aos="fade-left"><img src="../IMG/lds/img.jpg" height="200px" width="100%"
                             alt="image not found"></img></div>
                     <div class="pName">Loan Documentation System</div>
-                    <div class="pDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima
-                        numquam praesentium ea eos dolorem illo quis eligendi dignissimos assumenda earum accusamus
-                        laudantium aliquam ab quam tempore quod sunt illum exercitationem, nemo ipsam quia quo
-                        similique? Voluptate facere asperiores doloremque nemo est porro vero. Nesciunt, nihil nobis.
-                        Alias, veritatis distinctio?</div>
+                    <div class="pDetail" data-aos="fade-right">
+                        <p>
+                            Loan Documentation System is a simple java desktop based application built using Netbeans
+                            API.
+                            This system is completely built using java programing.
+                        </p>
+                        <p>
+                            The system uses mysql connector 8 to connect with the database. The font of the project is
+                            in Devanagari. For that, Preeti.ttf is used. Many jar and dependencies were used in this
+                            project.
+                        </p>
+                        <p>
+                            The aim of this project is to simplify the documentation process of co-operatives and other
+                            financial institutions.
+                        </p>
+                    </div>
 
-                    <div class="skillsUsed">
+                    <div class="skillsUsed" data-aos="fade-left">
 
                         <h3 class="skl">Jar</h3>
                         <h3 class="skl">Java</h3>
@@ -192,25 +211,33 @@
 
                     </div>
                     <hr width="85%" color="gray">
-                    <div class="codesnimages">
+                    <div class="codesnimages" data-aos="fade-left">
                         <button class="images">Images</button>
                         <a href="https://github.com/sudeep3693/HotelReservationSystem/blob/main/home.java"
                             target="_blank"> <button class="codes">Code</button></a>
                     </div>
 
                 </div>
-                <div class="project">
+                <div class="project" data-aos="fade-up">
 
-                    <div class="pImage"><img src="../IMG/portfolio.jpg" height="200px" width="100%"
+                    <div class="pImage" data-aos="fade-left"><img src="../IMG/portfolio.jpg" height="200px" width="100%"
                             alt="image not found"></img></div>
                     <div class="pName">Portfolio</div>
-                    <div class="pDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima
-                        numquam praesentium ea eos dolorem illo quis eligendi dignissimos assumenda earum accusamus
-                        laudantium aliquam ab quam tempore quod sunt illum exercitationem, nemo ipsam quia quo
-                        similique? Voluptate facere asperiores doloremque nemo est porro vero. Nesciunt, nihil nobis.
-                        Alias, veritatis distinctio?</div>
+                    <div class="pDetail" data-aos="fade-right">
+                        <p>
+                            This is a simple personal website built completely hardcode. The system site was built using
+                            html css and javascript.
+                        </p>
+                        <p>
+                            It contains few of my skills and projects related to programming and software development.
+                            The website also has form that helps to interact the vistiors with me.
+                        </p>
+                        <p>
+                            The website also has links that leads to git hubs and other social media interfaces.
+                        </p>
+                    </div>
 
-                    <div class="skillsUsed">
+                    <div class="skillsUsed" data-aos="fade-left">
 
                         <h3 class="skl">Html</h3>
                         <h3 class="skl">Css</h3>
@@ -220,7 +247,7 @@
 
                     </div>
                     <hr width="85%" color="gray">
-                    <div class="codesnimages">
+                    <div class="codesnimages" data-aos="fade-left">
                         <button class="images">Images</button>
                         <a href="https://github.com/sudeep3693/HotelReservationSystem/blob/main/home.java"
                             target="_blank"> <button class="codes">Code</button></a>
@@ -232,13 +259,13 @@
             </div>
         </div>
 
-        <div class="getintouch">
+        <div class="getintouch" id="contact" data-aos="fade-up">
 
             <div class="row1">
                 <h2>Get in Touch With me</h2>
             </div>
             <div class="row2">
-                <div class="col1">
+                <div class="col1" data-aos="fade-right">
                     <form action="https://formspree.io/f/mjkvddjr" method="post">
 
 
@@ -282,10 +309,10 @@
                         <div class="submitContainer">
                             <input class="submit" type="submit" value="Send">
                         </div>
-                        
+
                     </form>
                 </div>
-                <div class="col2">
+                <div class="col2" data-aos="fade-left">
                     <div class="fixdetail">
                         <div class="ttle">Address</div>
                         <div class="detl">Kushma-2, Parbat</div>
@@ -308,9 +335,6 @@
 
         </div>
 
-
-
-
     </div>
     <script>
         var typed = new Typed('.typeddata', {
@@ -328,8 +352,13 @@
             span.innerHTML = span.dataset.width;
 
         });
-
-
+//aos init
+        AOS.init(
+            {
+                offset:100,
+                
+            }
+        );
 
     </script>
     </div>
