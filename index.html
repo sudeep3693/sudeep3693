@@ -14,12 +14,12 @@
 <body>
 
     <div class="bodypart">
-
+        <div id="particles-js"></div>
         <div class="headerPart">
             <nav>
                 <input type="checkbox" id="check">
                 <label for="check">
-                    <img class="toggleButton" src="../IMG/horizontalbar.png" height="50px" width="50px"
+                    <img class="toggleButton" id="imageee" src="../IMG/horizontalbar.png" height="40px" width="40px"
                         alt="img not found">
                 </label>
                 <label class="nameLabel">SUDEEP SUBEDI</label>
@@ -62,7 +62,7 @@
                         I have a rich experience in Full Stack Development & Open-Source. I love to spend my time to
                         learning new technologies & applying them to develop new things.
                     </p>
-                    <p>Also I am good at problem-solving and proficient with Cybersecurity.</p>
+                    <p>Also I am good at problem-solving and proficient in Data Structured and Algorithm.</p>
                 </div>
             </div>
 
@@ -102,42 +102,42 @@
                 <div class="progress-container">
                     <h4>Java</h4>
                     <div class="progressbar">
-                        <span  data-aos="slide-right" data-width="90%" data-aos-duration="4000"></span>
+                        <span  data-aos="slide-right" data-width="60%" data-aos-duration="4000"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>JavaScript</h4>
                     <div class="progressbar">
-                        <span data-width="90%" data-aos-duration="8000" data-aos="slide-right"></span>
+                        <span data-width="40%" data-aos-duration="8000" data-aos="slide-right"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>C Programming</h4>
                     <div class="progressbar">
-                        <span data-width="50%" data-aos="slide-right" data-aos-duration="8000"></span>
+                        <span data-width="40%" data-aos="slide-right" data-aos-duration="8000"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>SQL</h4>
                     <div class="progressbar">
-                        <span data-width="50%" data-aos="slide-right" data-aos-duration="4000"></span>
+                        <span data-width="80%" data-aos="slide-right" data-aos-duration="4000"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>Hibernate</h4>
                     <div class="progressbar">
-                        <span data-width="50%" data-aos="slide-right" data-aos-duration="4000"></span>
+                        <span data-width="60%" data-aos="slide-right" data-aos-duration="4000"></span>
                     </div>
                 </div>
 
                 <div class="progress-container">
                     <h4>JSP</h4>
                     <div class="progressbar">
-                        <span data-width="40%" data-aos="slide-right" data-aos-duration="4000"></span>
+                        <span data-width="70%" data-aos="slide-right" data-aos-duration="4000"></span>
                     </div>
                 </div>
             </div>
@@ -160,7 +160,7 @@
                     <div class="pDetail" data-aos="fade-right">Hotel Reservation System is a simple desktop based application built with the
                         aim to replicate the reservation system used by various hotels and restaurants.
                         <p>The system used java programming language as the core programming language. The system was
-                            built in Netbeans API using JFrame Forms. It is just a simple and functioning application
+                            built in Netbeans IDE using JFrame Forms. It is just a simple and functioning application
                             developed for educational purpose</p>
                         <p>This program also uses mysql connector to connect with the database. The CURD operation was
                             also implemented properly to deal with the database.</p>
@@ -213,7 +213,7 @@
                     <hr width="85%" color="gray">
                     <div class="codesnimages" data-aos="fade-left">
                         <button class="images">Images</button>
-                        <a href="https://github.com/sudeep3693/HotelReservationSystem/blob/main/home.java"
+                        <a href="https://github.com/sudeep3693/LoanDocumantationProject"
                             target="_blank"> <button class="codes">Code</button></a>
                     </div>
 
@@ -249,7 +249,7 @@
                     <hr width="85%" color="gray">
                     <div class="codesnimages" data-aos="fade-left">
                         <button class="images">Images</button>
-                        <a href="https://github.com/sudeep3693/HotelReservationSystem/blob/main/home.java"
+                        <a href="https://github.com/sudeep3693/Portfolio"
                             target="_blank"> <button class="codes">Code</button></a>
                     </div>
 
@@ -315,7 +315,7 @@
                 <div class="col2" data-aos="fade-left">
                     <div class="fixdetail">
                         <div class="ttle">Address</div>
-                        <div class="detl">Kushma-2, Parbat</div>
+                        <div class="detl">RastraBank chowk, Pokhara</div>
                     </div>
 
                     <div class="fixdetail">
@@ -360,8 +360,24 @@
             }
         );
 
+
+            const checkbox = document.getElementById('check');
+            const image = document.getElementById('imageee');
+
+            checkbox.addEventListener('change',()=>
+        {
+            if(checkbox.checked){
+                image.src = "../IMG/toggleCross.png";
+            }
+            else{
+                image.src = "../IMG/horizontalbar.png";
+            }
+        });
     </script>
     </div>
+
+    <script src="particles.js-master/particles.js"></script>
+    <script src="particles.js-master/demo/js/app.js"></script>
 </body>
 
 </html>
